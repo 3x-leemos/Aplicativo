@@ -1,9 +1,0 @@
-{
-"name": "Sistema de Rotina e Finanças",
-"short_name": "Rotina+Fin",
-"start_url": "./index.html",
-"display": "standalone",
-"background_color": "#ffffff",
-"theme_color": "#5b8def",
-"icons": []
-}
