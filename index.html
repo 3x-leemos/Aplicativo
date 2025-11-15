@@ -1,12 +1,31 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotina e Finanças</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistema de Rotina e Finanças</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <script>if('serviceWorker' in navigator){ navigator.serviceWorker.register('service-worker.js') }</script>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    
+  <div class="app">
+    <aside>
+      <h1>Sistema de Rotina & Finanças</h1>
+      <nav>
+        <button data-page="dashboard" class="active">Dashboard</button>
+        <button data-page="rotina">Rotina</button>
+        <button data-page="financas">Finanças</button>
+        <button data-page="relatorios">Relatórios</button>
+        <button data-page="config">Configurações</button>
+      </nav>
+    </aside>
+
+    <main id="page-container"></main>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/tasks.js"></script>
+  <script src="js/finance.js"></script>
 </body>
 </html>
